@@ -1,0 +1,15 @@
+{
+  "name": "demo-01",
+  "version": "1.0.0",
+  "description": "this is a tailwindcss demo 01",
+  "main": "index.js",
+  "author": "Mohamed EL YONOUSI",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwindcss -i ./src/style/index.css -o ./dist/index.css",
+    "dev": "cp -r ./src/images ./dist && cp ./src/script/index.js ./dist/index.js && tailwindcss -i ./src/style/index.css -o ./dist/index.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

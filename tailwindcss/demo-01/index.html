@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/index.css">
+    <title>Tailwindcss Demo 01</title>
+</head>
+
+<body>
+    <nav class="container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div>
+                <img class="lg:w-[200px] md:w-[150px] w-[100px]" src="dist/images/logo.png" alt="Tailwind Logo">
+            </div>
+            <div class="hidden md:flex space-x-6 text-slate-900 items-center">
+                <a class="hover:text-orange-500" href="#portfolio">Portfolio</a>
+                <a class="hover:text-orange-500" href="#about">About</a>
+                <a class="hover:text-orange-500" href="#contact">Contact</a>
+                <a class="hover:text-orange-500" href="#social">Social</a>
+                <a class="py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-900 text-white capitalize"
+                    href="#callme">call me</a>
+            </div>
+            <button id="mobile-btn" class="md:hidden">
+                <img class="w-6" src="dist/images/menu.png" alt="menu">
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu" class="absolute hidden flex-col items-center gap-4 font-bold bg-gray-50 py-8 left-6 right-6 drop-shadow-lg border border-gray-300">
+                <a class="" href="#portfolio">Portfolio</a>
+                <a class="" href="#about">About</a>
+                <a class="" href="#contact">Contact</a>
+                <a class="" href="#social">Social</a>
+                <a class="py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-900 text-white capitalize"
+                    href="#callme">call me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container mx-auto px-6 flex md:flex-row flex-col-reverse justify-between gap-6">
+            <div class="md:w-1/2 flex flex-col justify-center gap-5 py-8 md:text-start text-center
+            text-slate-900">
+                <h1 class="font-bold lg:text-6xl md:text-5xl text-3xl">
+                    Rapidly build modern websites without ever leaving your HTML.
+                </h1>
+                <p>
+                    A utility-first CSS framework packed with classes like <span class="text-orange-500">flex</span>,
+                    <span class="text-orange-500">pt-4</span>, <span class="text-orange-500">text-center</span> and
+                    <span class="text-orange-500">rotate-90</span> that
+                    can be composed to build any design, directly in your markup.
+                </p>
+                <a class="md:self-start self-center py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-900 text-white capitalize"
+                    href="#callme">get started</a>
+            </div>
+            <div class="md:w-1/2">
+                <img class="ltr:object-right rtl:object-left object-cover" src="dist/images/dev.png"
+                    alt="web development">
+            </div>
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="container px-5 mx-auto my-32 text-center">
+            <h2 class="font-bold text-4xl">Best practices don't actually work.</h2>
+            <p class="mt-8 max-w-5xl mx-auto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed id quibusdam natus maxime accusamus,
+                dolor, deserunt porro voluptatem similique, quos est? Accusamus corrupti dicta sed maxime necessitatibus
+                natus, doloribus totam eius officiis esse commodi deleniti exercitationem, expedita placeat deserunt sit
+                asperiores et, temporibus consectetur nemo neque ullam reprehenderit error. Ab!
+            </p>
+            <div class="mt-10 flex md:flex-row flex-col md:gap-5 gap-10">
+                <div
+                    class="md:w-1/3 flex flex-col items-center p-6 gap-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img class="w-16 rounded-full -mt-12" src="dist/images/mohamed.png" alt="mohamed">
+                    <h5 class="font-bold text-lg text-slate-900">Mohamed EL YONOUSI</h5>
+                    <p class="text-sm/4 text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                        natus, minus unde excepturi cum
+                        officiis consectetur ea. Ducimus, suscipit nisi?</p>
+                </div>
+                <div
+                    class="md:w-1/3 flex flex-col items-center p-6 gap-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img class="w-16 rounded-full -mt-12" src="dist/images/mohamed.png" alt="mohamed">
+                    <h5 class="font-bold text-lg text-slate-900">Mohamed EL YONOUSI</h5>
+                    <p class="text-sm/4 text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                        natus, minus unde excepturi cum
+                        officiis consectetur ea. Ducimus, suscipit nisi?</p>
+                </div>
+                <div
+                    class="md:w-1/3 flex flex-col items-center p-6 gap-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img class="w-16 rounded-full -mt-12" src="dist/images/mohamed.png" alt="mohamed">
+                    <h5 class="font-bold text-lg text-slate-900">Mohamed EL YONOUSI</h5>
+                    <p class="text-sm/4 text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                        natus, minus unde excepturi cum
+                        officiis consectetur ea. Ducimus, suscipit nisi?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900">
+        <div class="container mx-auto flex md:flex-row flex-col-reverse text-white px-5 py-10 gap-8 justify-between">
+            <div class="flex flex-col md:items-start items-center justify-between md:gap-2 gap-8">
+                <div class="md:hidden block text-center mt-6 md:mt-0">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+                <div>
+                    <img class="h-8" src="dist/images/logo-white.png" alt="logo">
+                </div>
+                <div class="flex gap-4">
+                    <a href="#">
+                        <img class="w-[30px]" src="dist/images/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img class="w-[30px]" src="dist/images/instagram.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img class="w-[30px]" src="dist/images/twitter.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-around gap-32">
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="hover:text-slate-300">Home</a>
+                    <a href="#" class="hover:text-slate-300">About</a>
+                    <a href="#" class="hover:text-slate-300">Contact</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="hover:text-slate-300">Imprint</a>
+                    <a href="#" class="hover:text-slate-300">Privacy</a>
+                    <a href="#" class="hover:text-slate-300">Credits</a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between gap-4">
+                <form action="" class="flex flex-wrap gap-2">
+                    <input type="text" class="flex-1 py-2 px-6 rounded-full" placeholder="Subscribe to Newsletter">
+                    <button class="bg-orange-500 hover:bg-slate-500 rounded-full px-4 py-2">Go</button>
+                </form>
+                <div class="hidden md:block">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dist/index.js"></script>
+</body>
+
+</html>

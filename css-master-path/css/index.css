@@ -1,0 +1,1095 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+html {
+    font-size: 24px;
+    padding: 16px;
+    margin: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    margin: auto;
+}
+
+.title {
+    text-transform: capitalize;
+    text-decoration: 2px underline rgb(183, 1, 255);
+}
+
+hr {
+    width: 100%;
+    border: 3px solid #ffaa00;
+    background-color: #ffaa00;
+    border-radius: 3px;
+    margin: 1rem 0;
+}
+
+.div_1 {
+    background-color: rgba(223, 20, 20, 0.854);
+    color: beige;
+    background-image: url("../assets/img_1.png");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center right;
+    /* background-size: cover; */
+    /* not croped */
+    /* background-size: contain; */
+    background-size: 30% auto;
+}
+
+.div_1 {
+    padding: 1em;
+    /* top right bottom left */
+    /* padding: 10px 10px 10px 10px; */
+    /* top&bottom right&left */
+    /* padding: 1em 2em; */
+    /*top bottom right&left*/
+    /* padding: 10px 20px 15px; */
+}
+
+.div_1 {
+    margin: 1em 0 2em 0;
+    /* top right bottom left */
+    /* margin: 10px 10px 10px 10px; */
+    /* top&bottom right&left */
+    /* margin: 1em 2em; */
+    /*top bottom right&left*/
+    /* margin: 10px 20px 15px; */
+}
+
+.div_1 {
+    border-left-width: 1em;
+    border-left-color: rgb(255, 196, 0);
+    border-left-style: solid;
+}
+
+.div_1 {
+    outline: 1em solid rgb(142, 14, 206);
+    outline-offset: 0.1em;
+}
+
+.div_1 {
+    border-radius: 0.1em;
+}
+
+
+/*
+    * Block
+        - Take Full width if No width
+        - Add Line Break
+        - Respect Margin, Padding, Width, Height
+
+    * Inline
+        - Do Not Respect Width and Height
+        - Respect Margin, Padding [just left, right]
+        - Do Not Add Line Break
+        - Allow Elements before and after it
+
+    * Inline-Block
+        - Allow Elements before and after it
+        - Respect Margin, Padding, Width, Height
+*/
+
+.div_2 div {
+    background-color: #eee;
+    padding: 1em;
+    margin: 1em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.div_3 span {
+    background-color: #eee;
+    padding: 1em;
+    margin: 1em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.div_4 span {
+    background-color: #eee;
+    padding: 1em;
+    margin: 2em;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+}
+
+.div_5 div {
+    background-color: crimson;
+    padding: 1em;
+    margin: 1em 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.div_5 div:nth-child(2) {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*grouping*/
+
+.div_6 .sub_div_1 {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.div_6 .sub_div_2 {
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+.div_6 .sub_div_3 {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.div_6 .sub_div_4 {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.div_6 div {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eee;
+}
+
+
+/* nested */
+
+.div_7 div p {
+    color: red;
+}
+
+.div_8 h2 {
+    background-color: red;
+    padding: 10px;
+    width: fit-content;
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 20px;
+}
+
+
+/* overflow */
+
+.div_9 div {
+    background-color: #eee;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* text */
+
+
+/*
+    Text Shadow
+     syntax => text-shadow: H-Shadow V-Shadow Blur Color
+*/
+
+.div_10 {
+    background-color: #f9f9f9;
+    color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgb(255, 0, 0, 50%);
+}
+
+.div_10 {
+    text-align: center;
+    direction: ltr;
+    vertical-align: middle;
+}
+
+.div_10 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.div_10 p.p1 {
+    text-align: left;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-indent: 50px;
+    line-height: 1.6;
+    /*no break word*/
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.div_10 p.p2 {
+    text-align: left;
+    word-break: break-all;
+}
+
+.div_10 p.p3 {
+    background-color: #ddd;
+    text-align: left;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.div_10 p.p3:hover {
+    white-space: initial;
+}
+
+.div_11 {
+    background-color: #ddd;
+    padding: 0.5em;
+    text-align: center;
+    font-size: larger;
+    border: 1px solid #000;
+}
+
+.div_11 h2 {
+    border: inherit;
+    padding: inherit;
+}
+
+.div_11 h4 {
+    width: fit-content;
+    border: inherit;
+    text-align: inherit;
+}
+
+.div_12 {
+    background-color: #ddd;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 2.5rem;
+}
+
+.div_12 h2.h_1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: inherit;
+}
+
+.div_12 h2.h_2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: inherit;
+}
+
+
+/*
+    CSS Units
+    - px
+    - em => Times
+    - rem => Root Time
+    - vw => View Port Width
+    - percentage
+
+    Read
+    - vim
+    - vh
+
+    Default Font size for web page is 16px
+*/
+
+.div_13 {
+    background-color: #ddd;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 5vw;
+    font-size: 1vmax;
+    font-size: 5vmin;
+}
+
+
+/*
+* font style
+* font size
+* font weight
+*/
+
+.div_14 {
+    font-style: oblique;
+    font-weight: 300;
+}
+
+.div_14 .p_1 {
+    font-variant: small-caps;
+}
+
+.div_14 .p_2 {
+    text-transform: uppercase;
+}
+
+
+/*
+* mouse cursor style
+*/
+
+.div_15 button {
+    background-color: transparent;
+    color: tomato;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.div_15 p {
+    cursor: wait;
+}
+
+
+/*
+* Float
+* Clear
+*/
+
+.div_16 div {
+    background-color: red;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+
+/* .div_16 div div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: greenyellow;
+    width: 25%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+} */
+
+
+/*
+* calc
+* content width is 100%
+* 6 spaces 2% * 6 = 12% from content width
+* 100% - 12% = 88% Availabile space
+* 5 Elements the width is 88% / 5 = 19.2
+
+* content width is 100%
+* 6 spaces 10px * 6 = 60px from content width
+* 100% - 60px Availabile space
+* 5 Elements the width is (100% - 60px) / 5
+*/
+
+.div_17 div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+}
+
+
+/*
+* opactiy
+*/
+
+.div_18 .one {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.div_18 .two {
+    background-color: rgb(255, 0, 0, 10%);
+}
+
+
+/*
+* Position
+* static => default
+* relative => float in self
+* absolute => float in parent
+* fixed
+* sticky
+*/
+
+.div_19 {
+    min-height: 1000px;
+}
+
+.div_19 div {
+    color: white;
+    width: fit-content;
+    padding: 6px;
+}
+
+.div_19 .one {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.div_19 .three {
+    background-color: greenyellow;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.div_19 .two {
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.div_19 .parent {
+    width: 500px;
+    height: 300px;
+    background-color: tomato;
+    position: relative;
+}
+
+
+/*
+* z-index => related with position
+*/
+
+.div_20 {
+    position: relative;
+    margin-bottom: 16px;
+    height: 200px;
+}
+
+.div_20 div {
+    width: fit-content;
+    padding: 6px;
+    position: absolute;
+}
+
+.div_20 .one {
+    background-color: tomato;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+.div_20 .two {
+    background-color: yellow;
+    left: 15px;
+    top: 15px;
+    z-index: 3;
+}
+
+.div_20 .three {
+    background-color: greenyellow;
+    z-index: 2;
+}
+
+
+/*
+* lists styling
+*/
+
+.div_21 ul {
+    list-style-position: outside;
+    list-style-type: disc;
+    list-style-image: url("https://images.unsplash.com/photo-1664979618408-0ba8e8af0082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=30&q=60");
+}
+
+.div_21 li {
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+
+/*
+* table styling
+*/
+
+.div_22 table {
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    border-spacing: 0px;
+}
+
+.div_22 table td {
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.div_22 table thead td {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    border-color: rgb(25, 23, 23);
+}
+
+
+/*
+* Pseudo classes
+*/
+
+.div_23 .one {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.div_23 .two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+.div_23 a {
+    text-decoration: none;
+    color: steelblue;
+}
+
+.div_23 a:hover {
+    color: rebeccapurple;
+}
+
+.div_23 a:visited {
+    color: green;
+}
+
+.div_23 input:checked+label {
+    color: rebeccapurple;
+}
+
+.div_23 div:empty {
+    border: 1px dashed red;
+}
+
+.div_23 input[type="text"] {
+    border: 1px solid red;
+}
+
+.div_23 input[type="text"]:focus {
+    outline: none;
+    border-color: greenyellow;
+}
+
+
+/*
+* Pseudo element
+*/
+
+.div_24 .one::selection {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.div_24 .two::first-line {
+    font-size: 3rem;
+}
+
+.div_24 .one::first-letter {
+    font-size: 3rem;
+}
+
+.div_24 .two::first-line {
+    font-size: 2rem;
+    color: #ffaa00;
+}
+
+
+/*
+* Pseudo element before and after
+*/
+
+.div_25 .parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: members-counter;
+}
+
+.div_25 .parent .one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.div_25 .parent .user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* .div_25 .parent .one::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #00ff00 transparent transparent;
+} */
+
+.div_25 .parent .one::before {
+    content: attr(data-tooltip);
+    display: none;
+}
+
+.div_25 .parent .one:hover::before {
+    display: flex;
+    position: absolute;
+    top: -20px;
+    /* transform: translateY(-100px); */
+    color: whitesmoke;
+    padding-left: 10px;
+    background-color: #000;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00ff00;
+}
+
+.div_25 .parent .one::after {
+    content: counter(members-counter);
+    position: absolute;
+    background-color: #00ff00;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.div_25 ul {
+    list-style: none;
+}
+
+.div_25 ul li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.div_25 ul li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00ff00;
+}
+
+
+/*
+* Vendors Prefixes
+
+* Chrome
+* Firefox
+* Opera
+* Safari
+* IE, Edge
+
+* [1] New CSS Feature Appreared
+* [2] Browsers Tests the Feature In Version X.
+* [3] Browsers Add Prefix To give Developers the Ability to use it
+* [4] The Feature is fully supported in version Y. No need for Prefix
+
+* -webkit- => Chrome, Safari, new Opera Version
+* -moz- => Firefox
+* -ms- => IE, Edge
+* -o- => Old Version of Opera
+
+* [1] Most Of Users using Modern Browsers
+* [2] Vs Code Addon To Add The Prefix
+* [3] Task Runner
+*/
+
+.div_26 h3 {
+    background-color: #000;
+    color: whitesmoke;
+    padding: 16px;
+    position: relative;
+    transform: skew(-22deg);
+    -webkit-transform: skew(-22deg);
+    -moz-transform: skew(-22deg);
+    -ms-transform: skew(-22deg);
+    -o-transform: skew(-22deg);
+}
+
+.div_26 h3::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #00ff00;
+}
+
+
+/*
+* Border Radius
+*/
+
+.div_27 h3 {
+    width: 100px;
+    height: 100px;
+    background-color: #aa0000;
+    margin: 20px auto;
+    /*border-top-left-radius: 50% 90%;
+    border-bottom-left-radius: 90% 50%;
+    */
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    outline: 2px solid #550000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+}
+
+.div_27 h3::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #00ff00;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/*
+* Box Shadow
+
+* H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+*/
+
+.div_28 h3 {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 0 10px 0 #ddd, inset 0 0 10px 0 #000, inset 0 0 10px 0 #f00, 0 0 10px 0 #0f0, 0 0 10px 0 #00f;
+}
+
+
+/*
+* The Box Model
+* Box Sizing
+*/
+
+.div_29 .parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.div_29 .parent .one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 10px solid #f00;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*
+* Transition
+*  - Duration
+*  - Property
+*  - Delay
+*  - Timing Function
+*/
+
+.div_30 .one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    /*timetransitiontransition-duration: 1s;
+    */
+    /*timewaitingtransition-delay: 0.05s;
+    */
+    /*inwhatwillbeappliedtransition-property: margin-left, width;
+    */
+    /*controlduration*ease+--+*linear----*ease-in+---*ease-out---+*ease-in-out++++transition-timing-function: ease-in-out;
+    */
+    /*transition-property | transition-duration | transition-delay | transition-timing-function*/
+    transition: width 1s 1ms ease-in, margin-left 0.8s 0ms ease-out;
+    -webkit-transition: width 1s 1ms ease-in, margin-left 0.8s 0ms ease-out;
+    -moz-transition: width 1s 1ms ease-in, margin-left 0.8s 0ms ease-out;
+    -ms-transition: width 1s 1ms ease-in, margin-left 0.8s 0ms ease-out;
+    -o-transition: width 1s 1ms ease-in, margin-left 0.8s 0ms ease-out;
+}
+
+.div_30 .one:hover {
+    margin-left: 20px;
+    width: 280px;
+}
+
+
+/*
+* The !Important Declaration
+*/
+
+.div_31 .one {
+    background-color: #0ee6 !important;
+}
+
+
+/*
+* The Margin Collapse
+* [1] Only Vertical margin collapse
+* [2] Begger margin win
+* [3] Margin collapse with Elements without anything between
+* [4] Nesting Does not prevent Collapsing
+*/
+
+.div_32 .parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.div_32 .parent .one,
+.div_32 .parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.div_32 .parent .one {
+    background-color: #ddd;
+}
+
+.div_32 .parent .two {
+    background-color: #aaa;
+}
+
+.div_32 .parent .two .up {
+    background-color: #f00;
+    color: white;
+    height: 90px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.div_32 .parent .two .down {
+    background-color: #0f0;
+    color: white;
+    height: 90px;
+    margin-top: 20px;
+}
+
+
+/*
+* CSS Variable
+* - Globale Variable
+* - Local Variable
+* var => variabel name, falbback Value)
+*/
+
+:root {
+    --mainColor: #00f;
+    --mainPadding: 10px;
+}
+
+.div_33 .main {
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: calc(20px + var(--mainPadding));
+}
+
+.div_33 h2 {
+    background-color: #eee;
+    color: var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+.div_33 p {
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+.div_33 a:hover {
+    color: var(--mainColor);
+}
+
+
+/*local variable*/
+
+.div_33 .local {
+    --mainColor: black;
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+/*
+* Flexible box
+*** For Parent
+* - display: flex => To start Flexible Box
+* - flex-direction: row => Default Value
+* - flex-wrap: no-wrap => Default Value
+* - flex-flow: {flex-direction} + {flex-wrap}
+* - justify-content: flex-start => Default Value
+* - align-items: stretch => Default Value
+* - align-content: stretch => Default Value
+*** For Child
+* - flex-grow: 0 => Default Value
+* - flex-shrink: 1 => Default Value
+* - order: 0 => Default Value
+* - flex-basis: auto => Default Value (width - height)
+** shorthand for flex-grow-shrink-basis **
+* - flex: [flex-grow] [flex-shrink] [flex-basis] => default value 0 1 auto
+* - align-self: auto => Default Value
+*/
+
+.div_34 .flex {
+    background-color: #eee;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    align-content: space-between;
+}
+
+.div_34 .flex div {
+    background-color: #f00;
+    color: white;
+    width: calc(70% / 3);
+    text-align: center;
+    padding: 20px;
+}
+
+.div_34 .flex-child {
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.div_34 .flex-child div {
+    background-color: #f00;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    /* flex-grow: 1; */
+}
+
+.div_34 .flex-child div:nth-child(2) {
+    flex-shrink: 3;
+    order: 5;
+}
+
+.div_34 .flex-child div:nth-child(3) {
+    flex-grow: 3;
+    order: 4;
+}
+
+.div_34 .flex-child div:first-child {
+    /* flex-basis: 300px; */
+    flex: 0 1 300px;
+}
+
+.div_34 .align-self {
+    background-color: #eee;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.div_34 .align-self div {
+    background-color: #f00;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.div_34 .align-self div:nth-child(2) {
+    align-self: flex-end;
+}
+
+/*
+* Filters
+*/
+.div_35 {
+    margin: auto;
+}
+
+.div_35 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    filter: grayscale(100%) blur(3px);
+    /*filter: blur(4px);
+    */
+    /*filter: opacity(.5);
+    */
+    -webkit-filter: grayscale(100%) blur(3px);
+}
+
+.div_35 img:hover {
+    /*filter: grayscale(0%);
+    */
+    /*filter: blur(0px);
+    */
+    filter: grayscale(0%) blur(0px);
+    -webkit-filter: grayscale(0%) blur(0px);
+}
